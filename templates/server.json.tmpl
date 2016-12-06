@@ -9,9 +9,9 @@
     "client_addr": "{{getv "/self/container/primary_ip"}}",
     "data_dir": "/var/consul",
     "encrypt": "{{getv "/self/service/metadata/enc.key"}}",
-    "ca_file": "/opt/rancher/ssl/ca.crt",
-    "cert_file": "/opt/rancher/ssl/consul.crt",
-    "key_file": "/opt/rancher/ssl/consul.key",
+    "ca_file": "/config/consul/ca.crt",
+    "cert_file": "/config/consul/consul.crt",
+    "key_file": "/config/consul/consul.key",
     "verify_incoming": true,
     "verify_outgoing": true,
     "log_level": "INFO"
