@@ -8,7 +8,7 @@
     "bind_addr": "{{getv "/self/container/primary_ip"}}",
     "client_addr": "{{getv "/self/container/primary_ip"}}",
     "data_dir": "/var/consul",
-    "encrypt": "{{getv "/services/consul/metadata/enc.key"}}",
+    "encrypt": "{{getv "/self/service/metadata/enc.key"}}",
     "ca_file": "/opt/rancher/ssl/ca.crt",
     "cert_file": "/opt/rancher/ssl/consul.crt",
     "key_file": "/opt/rancher/ssl/consul.key",
