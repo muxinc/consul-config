@@ -1,13 +1,10 @@
 {
-    {{ if (eq (getv "/self/container/service_index") "1") }}"bootstrap": true,{{else}}
-    "retry_join": ["{{getv "/self/service/containers/0/primary_ip"}}"],
-    "bootstrap": false,{{end}}
     "server": true,
     "datacenter": "dc1",
-    "advertise_addr": "{{getv "/self/container/primary_ip"}}",
-    "bind_addr": "{{getv "/self/container/primary_ip"}}",
-    "client_addr": "{{getv "/self/container/primary_ip"}}",
-    "data_dir": "/var/consul",
+    "advertise_addr": "{{getv "/self/host/agent_ip"}}",
+    "bind_addr": "0.0.0.0",
+    "client_addr": "{{getv "/self/host/agent_ip"}}",
+    "data_dir": "/consul/data",
     "encrypt": "{{getv "/self/service/metadata/enc.key"}}",
     "ca_file": "/consul/config/ca.crt",
     "cert_file": "/consul/config/consul.crt",

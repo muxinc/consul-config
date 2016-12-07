@@ -10,4 +10,5 @@ keys = [
   "/self/host/agent_ip",
   "/self/service/metadata/enc.key",
   "/self/container/service_index",
+  "/self/container/primary_ip",
 ]

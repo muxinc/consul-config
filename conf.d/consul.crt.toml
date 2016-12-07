@@ -4,8 +4,6 @@ dest = "/consul/config/consul.crt"
 owner = "root"
 mode = "0644"
 keys = [
-  "/self/service/metadata/consul1.crt",
-  "/self/service/metadata/consul2.crt",
-  "/self/service/metadata/consul3.crt",
+  "/self/service/metadata/consul.crt",
   "/self/container/service_index",
   ]
